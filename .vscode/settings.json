@@ -1,5 +1,7 @@
 {
   "files.associations": {
       "**/azure-pipelines.yml": "azure-pipelines"
-  }
+  },
+  "appService.defaultWebAppToDeploy": "/subscriptions/dd28cb31-0de0-4a36-8602-860917d30e28/resourceGroups/kennards-storybook-rg/providers/Microsoft.Web/sites/vc-nextapp",
+  "appService.deploySubpath": "."
 }
