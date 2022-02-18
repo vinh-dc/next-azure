@@ -1,0 +1,2 @@
+[config]
+command = bash unzip release.zip -d .
