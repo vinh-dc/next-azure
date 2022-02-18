@@ -36,7 +36,6 @@ jobs:
           name: node-app
           path: |
             release.zip
-            .deployment
 
   deploy-front-end:
     name: Deploy frontend
@@ -60,7 +59,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: "vc-nextjs"
-          package: .
+          package: release.zip
 
       - name: Azure logout
         run: |
