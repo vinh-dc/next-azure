@@ -28,11 +28,9 @@ jobs:
           npm run build --if-present
 
       - name: zip artifact
-        if: github.event_name == 'deployment'
         run: zip release.zip ./.next/* ./public/* ./node_modules/* server.js web.config -r
 
       - name: Upload frontend artifact
-        if: github.event_name == 'deployment'
         uses: actions/upload-artifact@v2
         with:
           name: node-app
