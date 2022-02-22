@@ -28,7 +28,7 @@ jobs:
           npm run build --if-present
 
       - name: zip artifact
-        run: zip release.zip ./.next/* ./public/* ./node_modules/* server.js web.config -r
+        run: zip release.zip ./.next/* ./public/* ./node_modules/* server.js web.config deploy.ps1 .deployment CreateDeployContentPackage.ps1 -r
 
       - name: Upload frontend artifact
         uses: actions/upload-artifact@v2
