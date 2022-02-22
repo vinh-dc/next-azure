@@ -59,7 +59,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "vc-nextjs"
+          app-name: "vc-nextapp"
           package: nextjs
 
       - name: Azure logout
