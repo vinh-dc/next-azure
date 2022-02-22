@@ -1,0 +1,2 @@
+[config]
+command = powershell -NoProfile -NoLogo -ExecutionPolicy Unrestricted -File ".\deploy.ps1"
