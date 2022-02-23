@@ -30,9 +30,9 @@ jobs:
       - name: zip artifact
         run: |
           mkdir _build
-          copy deploy.ps1 .deployment _build
+          cp deploy.ps1 .deployment _build
           zip release.zip ./.next/* ./public/* ./node_modules/* server.js web.config CreateDeployContentPackage.ps1 -r
-          copy release.zip _build
+          cp release.zip _build
 
       - name: Upload frontend artifact
         uses: actions/upload-artifact@v2
