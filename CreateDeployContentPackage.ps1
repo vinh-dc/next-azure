@@ -1,1 +1,1 @@
-echo "--Executing script at target on the server"
+echo "-- this is working Executing script at target on the server"
