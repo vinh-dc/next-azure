@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir _build
           cp deploy.ps1 .deployment _build
-          zip release.zip ./.next/* ./public/* ./node_modules/* server.js web.config CreateDeployContentPackage.ps1 -r
+          zip release.zip server.js web.config CreateDeployContentPackage.ps1 -r
           cp release.zip _build
 
       - name: Upload frontend artifact
