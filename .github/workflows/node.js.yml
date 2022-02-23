@@ -32,7 +32,7 @@ jobs:
           mkdir _build
           cp deploy.ps1 .deployment _build
           zip release.zip server.js web.config CreateDeployContentPackage.ps1 -r
-          cp CreateDeployContentPackage _build
+          cp CreateDeployContentPackage.ps1 _build
           cp release.zip _build
 
       - name: Upload frontend artifact
