@@ -44,7 +44,7 @@ jobs:
 
       - uses: zwaldowski/semver-release-action@v1
         with:
-          bump: major,minor
+          bump: minor
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   deploy-front-end:
