@@ -43,6 +43,8 @@ jobs:
             _build
 
       - uses: zwaldowski/semver-release-action@v1
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: true
         with:
           bump: minor
           prefix: v
