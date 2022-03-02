@@ -42,6 +42,11 @@ jobs:
           path: |
             _build
 
+      - uses: zwaldowski/semver-release-action@v1
+        with:
+          bump: major,minor
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
   deploy-front-end:
     name: Deploy frontend
     runs-on: ubuntu-latest
